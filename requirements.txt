@@ -1,0 +1,7 @@
+# macos_calendar_dumper dependencies (macOS only)
+# Install with: pip install -r requirements.txt
+#
+# EventKit bindings; also pulls in pyobjc-core and pyobjc-framework-Cocoa
+# (which provides Foundation). 10.0+ is needed for the macOS 14 calendar
+# access API used by the script.
+pyobjc-framework-EventKit>=10.0; sys_platform == "darwin"
